@@ -6,11 +6,14 @@ minute=1
 
 while [ $hour -le 12 ] && [ $minute -le 59 ]
 do
-    printf "%02d:%02d\n" $hour $minute
-    
+    if [ $minute -eq 1 ]; then
+        echo "Hour: $hour"
+    fi
+    echo $minute
+
     # Increment minute
     ((minute++))
-    
+
     # If minute exceeds 59, reset it to 1 and increment hour
     if [ $minute -gt 59 ]; then
         minute=1
