@@ -1,3 +1,4 @@
 #!/bin/bash
+# a comment explaining what it is doing
 
 echo $BASHPID
