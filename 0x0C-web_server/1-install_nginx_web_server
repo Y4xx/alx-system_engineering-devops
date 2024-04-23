@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Install nginx web server
+
+# Update package index
+apt-get update
+
+# Install nginx with 'yes' flag to avoid manual confirmation
+apt-get install -y nginx
+
+# Configure nginx to listen on port 80 and return 'Hello World!' at root
+echo "Hello World!" > /usr/share/nginx/html/index.html
+
+# Restart nginx
+service nginx restart
