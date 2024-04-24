@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# use apache the dubugging the task
+service apache2 start
+
