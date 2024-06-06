@@ -9,10 +9,8 @@ def number_of_subscribers(subreddit):
     """
     number of subscribers method
     """
-    username = 'ledbag123'
-    password = 'Reddit72'
-    user_pass_dict = {'user': username, 'passwd': password, 'api_type': 'json'}
-    headers = {'user-agent': '/u/ledbag123 API Python for Holberton School'}
+
+    headers = {'user-agent': '/u/Superstonk API Python for Holberton School'}
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     client = requests.session()
     client.headers = headers
