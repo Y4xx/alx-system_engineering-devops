@@ -9,8 +9,7 @@ def number_of_subscribers(subreddit):
     """
     number of subscribers method
     """
-
-    headers = {'user-agent': '/u/Superstonk API Python for Holberton School'}
+    headers = {'user-agent': '/r/Superstonk'}
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     client = requests.session()
     client.headers = headers
