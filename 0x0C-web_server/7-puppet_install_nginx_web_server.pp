@@ -13,4 +13,3 @@ exec { 'start service':
   command => 'sudo service nginx start',
   path    => ['/bin', '/usr/bin', '/usr/sbin'],
 }
-
