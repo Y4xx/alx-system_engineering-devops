@@ -1,1 +1,1 @@
-0x1A-application_server - Y4x
+0x1A. Application server
